@@ -28,6 +28,8 @@ def seed_torch(seed):
 
 seed_torch(seed)
 
+""" Some terminologies such as G, H used from https://arxiv.org/pdf/1901.08244.pdf
+"""
 def plot_Hessian(model, loss, trainloader, num_eigenthings, dir, step, grad=None):
     start_time = timeit.default_timer()
     eigvals_Hess, eigvecs_Hess = compute_hessian_eigenthings(model, trainloader,
@@ -1021,4 +1023,5 @@ for j in range(num_layers):
 plt.plot(np.arange(len(sgrad_norm)), sgrad_norm)
 plt.savefig(dir + '/sgrad_norm.png')
 plt.close()
+
 
