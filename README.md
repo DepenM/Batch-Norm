@@ -7,8 +7,8 @@ For runnning the code, install the library [pytorch-hessian-eigenthings](https:/
 
 ## Details
 * `hessian.py:` Contains the code for plotting Hessian of DNN. Downloaded from [DeepnetHessian](https://github.com/AnonymousNIPS2019/DeepnetHessian) and modified appropriately.
-* `OLS.ipynb:` Shows the results showing impact of BN on the trajectory of OLS
-* `BN_high_lr.ipynb:` Empirically demonstrates that gradient explosion occurs for deeper nets without BN at high lr, while the same is not true for BN networks. Theoretical justification provided in pdf.
+* `OLS.ipynb:` Results showing impact of BN on the trajectory of OLS
+* `BN_high_lr.pynb:` Empirically demonstrates that gradient explosion occurs for deeper nets without BN at high lr, while the same is not true for BN networks. Theoretical justification provided in pdf.
 * `robust_noise.py:` Code for training a BN/non-BN network on the noisy dataset and producing the required logs.
 * `plot_robust_noise.ipynb:` Plots the robustness of BN vs non-BN networks against noise with increasing data points using the logs generated from the above py file
 * `Other_normalizations.py:` Plots the hessian and distance from initialization for other normalizations apart from BN. Some results have been provided in the folder Other_normalizations.
