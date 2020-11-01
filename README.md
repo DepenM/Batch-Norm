@@ -1,11 +1,12 @@
 # Batch-Norm
 
-This repository contains experiments for understanding the effect of Batch Normalization on parameter trajectory and its interaction with feature noise. The experiment details and results along with some theoretical justifications have been provided in the Understanding_Batch_Normalization pdf.
+This repository contains experiments for understanding the effect of Batch Normalization on parameter trajectory and its interaction with feature noise.
 
 ## Pre-requisites
 For runnning the code, install the library [pytorch-hessian-eigenthings](https://github.com/noahgolmant/pytorch-hessian-eigenthings)
 
 ## Details
+* `Understanding_Batch_Normalization.pdf:` Contains experiment details and results along with some theoretical justifications.
 * `hessian.py:` Contains the code for plotting Hessian of DNN. Downloaded from [DeepnetHessian](https://github.com/AnonymousNIPS2019/DeepnetHessian) and modified appropriately.
 * `OLS.ipynb:` Results showing impact of BN on the trajectory of OLS
 * `BN_high_lr.pynb:` Empirically demonstrates that gradient explosion occurs for deeper nets without BN at high lr, while the same is not true for BN networks. Theoretical justification provided in pdf.
